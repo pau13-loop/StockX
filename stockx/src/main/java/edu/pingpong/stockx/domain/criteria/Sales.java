@@ -15,7 +15,7 @@ public class Sales implements Criteria{
     @Override
     public List<Offer> checkCriteria(Item sneaker){
         for(Offer sneak : sneaker.offers()){
-        if(sneak instanceof Ask){
+        if(sneak instanceof Sale){
             sales.add(sneak);
         }
     }
