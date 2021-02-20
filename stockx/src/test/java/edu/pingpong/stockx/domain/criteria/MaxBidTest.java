@@ -1,15 +1,10 @@
 package edu.pingpong.stockx.domain.criteria;
 
-import static org.junit.Assert.assertArrayEquals;
-
-import java.util.List;
-
 import org.junit.Test;
 
 import edu.pingpong.stockx.domain.item.Item;
 import edu.pingpong.stockx.domain.item.Sneaker;
 import edu.pingpong.stockx.domain.offer.Bid;
-import edu.pingpong.stockx.domain.offer.Offer;
 
 public class MaxBidTest {
     
