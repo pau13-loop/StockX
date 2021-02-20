@@ -8,23 +8,21 @@ import edu.pingpong.stockx.domain.offer.*;
 
 public class MinAsk implements Criteria{
     
-    List<Offer> minimum = new ArrayList<Offer>();
+    List<Offer> minAsk = new ArrayList<Offer>();
 
     public MinAsk() {}
 
     @Override
     public List<Offer> checkCriteria(Item sneaker) {
 
-        Offer ask = new Bid("46", 0);
+        Offer ask = sneaker.offers().get(0);
 
         for(Offer sneak : sneaker.offers()) {
-            if(sneak instanceof Bid) {
-                if(sneak.value() < ask.value()) {
+            if(sneak instanceof Ask && sneak.value() < ask.value()){
                     ask = sneak;
                 }
             }
-        }
-    minimum.add(ask);
-    return minimum;
+    minAsk.add(ask);
+    return minAsk;
     }
 }

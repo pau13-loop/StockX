@@ -18,10 +18,8 @@ public class MaxBid implements Criteria{
         Offer bid = new Bid("46", 0);
 
         for(Offer sneak : sneaker.offers()) {
-            if(sneak instanceof Bid) {
-                if(sneak.value() > bid.value()) {
+            if(sneak instanceof Bid && sneak.value() > bid.value()) {
                     bid = sneak;
-                }
             }
         }
     maxBid.add(bid);
