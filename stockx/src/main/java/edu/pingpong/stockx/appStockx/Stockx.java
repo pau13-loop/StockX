@@ -36,6 +36,39 @@ public class Stockx
         sneaker.add(new Bid("9.5", 479));
         sneaker.add(new Bid("13", 338));
         sneaker.add(new Bid("9.5", 480));
+
+        /**
+         * Crear asks
+         * y añadirlas a la zapatilla
+         * en sus offers.
+         */
+
+        Ask ask = new Ask("13", 288);
+        sneaker.add(ask);
+        sneaker.add(new Ask("6", 600));
+        sneaker.add(new Ask("9.5", 333));
+        sneaker.add(new Ask("9.5", 340));
+        sneaker.add(new Ask("13", 330));
+
+        /**
+         * Crear el filtro "Bids" que filtra
+         * solo las bids de entre las 
+         * offers de la zapatilla. 
+         */
+
+        Criteria bids = new Bids();
+        System.out.println("\n\t\t All BIDS");
+        bids.checkCriteria(sneaker).forEach(System.out::print);
+
+        /**
+         * Crea el filtro "Asks" que filtra
+         * solo las asks de entre las
+         * offers de la zapatilla. 
+         */
+
+        Criteria asks = new Asks();
+        System.out.println("\n\t\t All ASKS");
+        asks.checkCriteria(sneaker).forEach(System.out::print);
     }
     
 
