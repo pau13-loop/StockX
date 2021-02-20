@@ -1,2 +1,2 @@
-# StockX-WithoutStreams
-First Java Coding Test applying SOLID Principles and TDD methodology   
+# ExamenProg
+Examen de programación en Java
