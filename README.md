@@ -1,4 +1,4 @@
-#Primer examen de programacón en Java
+# Primer examen de programacón en Java
 
 > En este repositorio he repetido el examen en cuanto en podido para ver hasta donde era capaz de llegar realmente con los conocimientos adquiridos hasta la fecha.
 
