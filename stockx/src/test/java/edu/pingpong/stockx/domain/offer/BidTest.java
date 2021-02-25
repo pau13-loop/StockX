@@ -24,6 +24,6 @@ public class BidTest {
     @Test
     public void toStringTest() {
 
-        assertEquals("13\t200\n", bid.toString());
+        assertEquals("\t\t13\t200\n", bid.toString());
     }
 }
