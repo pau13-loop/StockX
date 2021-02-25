@@ -25,12 +25,6 @@ public class MaxBidTest {
         sneaker.add(new Bid("1", 15));
 
         assertArrayEquals(500, maxBid.checkCriteria(sneaker).get(0).value());
-
-
-
-        
-
-
     }
 
     private void assertArrayEquals(int i, int value) {
@@ -49,6 +43,5 @@ public class MaxBidTest {
         sneaker.add(new Bid("1", 15));
 
         assertArrayEquals(200, maxBid.checkCriteria(sneaker).get(0).value());
-
     }
 }
