@@ -1,6 +1,7 @@
 package edu.pingpong.stockx.domain.criteria;
 
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.ArrayList;
 
 import edu.pingpong.stockx.domain.item.Item;
@@ -13,7 +14,7 @@ public class AndCriteria implements Criteria {
 
     public AndCriteria(Criteria criteria, Criteria otheCriteria) {
         this.criteria = criteria;
-        this.otheCriteria = otheCriteria;
+        this.otheCriteria = otheCriteria; 
     }
 
     @Override
@@ -21,14 +22,8 @@ public class AndCriteria implements Criteria {
 
         List<Offer> criteriaList = this.criteria.checkCriteria(sneaker);
         List<Offer> otherCriteriaList = this.otheCriteria.checkCriteria(sneaker);
-        List<Offer> finalCriteriaList = new ArrayList<Offer>();
 
-        for(Offer element : criteriaList) {
-            if(otherCriteriaList.contains(element)) {
-                finalCriteriaList.add(element);
-            }
-        }
-        return finalCriteriaList;
+        return criteriaList.stream().filter(otherCriteriaList::contains).collect(Collectors.toList());
     }
     
 }
