@@ -25,12 +25,6 @@ public class MinAskTest {
         sneaker.add(new Ask("1", 15));
 
         assertArrayEquals(15, maxAsk.checkCriteria(sneaker).get(0).value());
-
-
-
-        
-
-
     }
 
     private void assertArrayEquals(int i, int value) {
@@ -49,6 +43,5 @@ public class MinAskTest {
         sneaker.add(new Ask("1", 15));
 
         assertArrayEquals(15, maxAsk.checkCriteria(sneaker).get(0).value());
-
     }
 }
