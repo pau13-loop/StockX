@@ -24,6 +24,6 @@ public class AskTest {
     @Test
     public void toStringTest() {
 
-        assertEquals("14\t400\n", ask.toString());
+        assertEquals("\t\t14\t400\n", ask.toString());
     }
 }

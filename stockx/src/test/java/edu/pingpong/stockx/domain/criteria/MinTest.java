@@ -6,7 +6,7 @@ import edu.pingpong.stockx.domain.item.Item;
 import edu.pingpong.stockx.domain.item.Sneaker;
 import edu.pingpong.stockx.domain.offer.Ask;
 
-public class MinAskTest {
+public class MinTest {
     
     Item sneaker = null;
     Criteria bids = null;
@@ -44,4 +44,5 @@ public class MinAskTest {
 
         assertArrayEquals(15, maxAsk.checkCriteria(sneaker).get(0).value());
     }
+
 }

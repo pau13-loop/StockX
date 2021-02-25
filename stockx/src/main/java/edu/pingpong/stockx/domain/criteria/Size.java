@@ -17,10 +17,8 @@ public class Size implements Criteria{
     @Override
     public List<Offer> checkCriteria(Item sneaker){
         return sneaker.offers().stream()
-                                .filter(s -> s instanceof Sale)
-                                .collect(Collectors.toList())
-                                .stream()
-                                .filter(s -> s.size().equals(this.size)).collect(Collectors.toList());
+                                .filter(s -> s.size().equals(this.size))
+                                .collect(Collectors.toList());
     }
 }
 

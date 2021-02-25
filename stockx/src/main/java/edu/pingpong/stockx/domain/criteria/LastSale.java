@@ -14,10 +14,7 @@ public class LastSale implements Criteria{
 
     @Override
     public List<Offer> checkCriteria(Item sneaker) {
-
-        int i = sneaker.offers().size();
-
-            lastSale.add(sneaker.offers().get(i-1));
+            lastSale.add(sneaker.offers().get(sneaker.offers().size()-1));
             return lastSale;
     }
 }
