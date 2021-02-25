@@ -24,6 +24,6 @@ public class SaleTest {
     @Test
     public void toStringTest() {
 
-        assertEquals("17\t700\n", sale.toString());
+        assertEquals("\t\t17\t700\n", sale.toString());
     }
 }

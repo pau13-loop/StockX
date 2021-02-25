@@ -6,7 +6,7 @@ import edu.pingpong.stockx.domain.item.Item;
 import edu.pingpong.stockx.domain.item.Sneaker;
 import edu.pingpong.stockx.domain.offer.Bid;
 
-public class MaxBidTest {
+public class MaxTest {
     
     Item sneaker = null;
     Criteria bids = null;
