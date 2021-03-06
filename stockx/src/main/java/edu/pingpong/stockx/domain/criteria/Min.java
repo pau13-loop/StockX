@@ -1,8 +1,7 @@
 package edu.pingpong.stockx.domain.criteria;
 
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.Comparator;
+import java.util.Optional;
 
 import edu.pingpong.stockx.domain.item.Item;
 import edu.pingpong.stockx.domain.offer.Offer;
@@ -21,10 +20,10 @@ public class Min implements Criteria{
     @Override
     public List<Offer> checkCriteria(Item sneaker){
 
-        final Criteria andCriteria = new AndCriteria(this.criteria, this.otheCriteria);
+        Criteria andCriteria = new AndCriteria(this.criteria, this.otheCriteria);
 
-        Comparator<Offer> comparator = Comparator.comparing( Offer::value);
+        Optional<Offer> min = andCriteria.checkCriteria(sneaker).stream().min(Offer::compareTo);
 
-        return andCriteria.checkCriteria(sneaker).stream().min(comparator).stream().collect(Collectors.toList());
+        return min.isPresent()? List.of(min.get()) : List.of();
     }
 }

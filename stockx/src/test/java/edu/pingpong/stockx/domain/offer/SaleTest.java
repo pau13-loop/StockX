@@ -10,20 +10,17 @@ public class SaleTest {
 
     @Before
     public void setupBid() {
-
         sale = new Sale("17", 700);
     }
 
     @Test
     public void sizaAndValueTest() {
-
         assertEquals("17", sale.size());
         assertEquals(700, sale.value());
     }
 
     @Test
     public void toStringTest() {
-
         assertEquals("\t\t17\t700\n", sale.toString());
     }
 }

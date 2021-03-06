@@ -1,7 +1,7 @@
 package edu.pingpong.stockx.domain.offer;
 
-public class Ask implements Offer{
-    
+public class Ask implements Offer {
+
     private String size = null;
     private Integer ask = 0;
 
@@ -14,7 +14,7 @@ public class Ask implements Offer{
     public String size() {
         return this.size;
     }
-    
+
     @Override
     public int value() {
         return this.ask;
@@ -22,12 +22,11 @@ public class Ask implements Offer{
 
     @Override
     public int compareTo(Offer ask) {
-        return this.ask;
+        return this.ask.compareTo(ask.value());
     }
 
     @Override
     public String toString() {
         return "\t\t" + size() + "\t" + Integer.toString(value()) + "\n";
     }
-
 }

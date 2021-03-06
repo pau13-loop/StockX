@@ -30,7 +30,7 @@ public class Sneaker implements Item{
     }
 
     @Override
-    public int getSale(){
+    public int getSale() {
         return this.sale;
     }
 
@@ -64,7 +64,8 @@ public class Sneaker implements Item{
         this.sneakers.add(value);
     }
 
-    public List<Offer> offers(){
+    @Override
+    public List<Offer> offers() {
         return this.sneakers;
     }
 
