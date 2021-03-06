@@ -2,7 +2,6 @@ package edu.pingpong.stockx.domain.criteria;
 
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.ArrayList;
 
 import edu.pingpong.stockx.domain.item.Item;
 import edu.pingpong.stockx.domain.offer.Offer;
