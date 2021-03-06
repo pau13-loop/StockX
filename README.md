@@ -58,7 +58,7 @@ All publics test, to anyone that alredy know about the coding, Java and all the 
 
 ![UML Diagram](./UMLDiagram.png "UML")
 
-> This UML Diagram has been provided by @dfleta
+> This UML Diagram has been provided by https://github.com/dfleta
 ---
 
 **[⬆ back to top](#table-of-contents)**
