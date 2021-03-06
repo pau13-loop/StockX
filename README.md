@@ -7,6 +7,7 @@
 1. [Motivation](#motivation)
 1. [Used Technologies](#used-technologies)
 1. [Reflections](#reflections)
+1. [UML Diagram](#uml-diagram)
 1. [License](#license)
 
 ---
@@ -49,6 +50,15 @@ My point of view of this test is really good. I think had been the three hours t
 All publics test, to anyone that alredy know about the coding, Java and all the main points referenced before. I hope you'll enjoy as much as me and it will make you feel happiness when you get a overcome a new user story, anger when you'll get stuck and a clever amaze when you'll get to the answer by one of the ways you've never expected.
 
 
+---
+
+**[⬆ back to top](#table-of-contents)**
+
+## UML Diagram
+
+![UML Diagram](./UMLDiagram.png "UML")
+
+> This UML Diagram has been provided by @dfleta
 ---
 
 **[⬆ back to top](#table-of-contents)**
