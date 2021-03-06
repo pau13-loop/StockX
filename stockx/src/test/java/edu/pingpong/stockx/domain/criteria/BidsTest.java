@@ -53,7 +53,7 @@ public class BidsTest {
     }
 
     @Test
-    public void noBidsTest() {
+    public void nullBidsTest() {
         Item sneaker2 = new Sneaker("Nike", "Spider-Man");
         List<Offer> minimumBid = bids.checkCriteria(sneaker2);
         sneaker2.setBid(minimumBid.isEmpty() ? 0 : minimumBid.get(0).value());
