@@ -15,7 +15,7 @@ public class MaxBid implements Criteria{
     @Override
     public List<Offer> checkCriteria(Item sneaker) {
     
-    Comparator<Offer> comparator = Comparator.comparing( Offer::value);
+    Comparator<Offer> comparator = Comparator.comparing(Offer::value);
 
     return sneaker.offers().stream().filter(b -> b instanceof Bid).max(comparator).stream().collect(Collectors.toList());
     }

@@ -10,8 +10,6 @@ public class LastSale implements Criteria{
     
     List<Offer> lastSale = new ArrayList<Offer>();
 
-    public LastSale() {}
-
     @Override
     public List<Offer> checkCriteria(Item sneaker) {
             lastSale.add(sneaker.offers().get(sneaker.offers().size()-1));

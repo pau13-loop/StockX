@@ -15,7 +15,7 @@ public class MinAsk implements Criteria{
     @Override
     public List<Offer> checkCriteria(Item sneaker) {
 
-        Comparator<Offer> comparator = Comparator.comparing( Offer::value);
+        Comparator<Offer> comparator = Comparator.comparing(Offer::value);
 
         return sneaker.offers().stream().filter(a -> a instanceof Ask).min(comparator).stream().collect(Collectors.toList());
     }
