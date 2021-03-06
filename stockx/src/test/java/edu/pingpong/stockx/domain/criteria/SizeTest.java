@@ -1,6 +1,7 @@
 package edu.pingpong.stockx.domain.criteria;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -33,8 +34,19 @@ public class SizeTest {
     }
 
     @Test
-    public void checkSizeTest() {
+    public void sizeLengthTest() {
         assertEquals(3, size.checkCriteria(sneaker).size());
     }
+
+    @Test
+    public void checkRightSizeTest() {
+        assertTrue(size.checkCriteria(sneaker).stream().allMatch(s -> s.size().equals("9.5")));;
+    }
     
+    @Test
+    public void nullSizeTest() {
+        Item sneaker2 = new Sneaker("Nike", "Spider-Man");
+        size = new Size("5");
+        assertTrue(size.checkCriteria(sneaker2).isEmpty());
+    }
 }
