@@ -1,11 +1,10 @@
 package edu.pingpong.stockx.domain.offer;
 
-public interface Offer {
+public interface Offer extends Comparable<Offer> {
 
     String size();
 
     int value();
 
-    int compareTo(Offer bid);
-    
+    int compareTo(Offer offer);
 }

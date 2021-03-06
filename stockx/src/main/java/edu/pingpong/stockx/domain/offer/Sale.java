@@ -1,7 +1,7 @@
 package edu.pingpong.stockx.domain.offer;
 
-public class Sale implements Offer{
-    
+public class Sale implements Offer {
+
     private String size = null;
     private Integer price = 0;
 
@@ -21,8 +21,8 @@ public class Sale implements Offer{
     }
 
     @Override
-    public int compareTo(Offer price) {
-        return this.price;
+    public int compareTo(Offer sale) {
+        return this.price.compareTo(sale.value());
     }
 
     @Override
