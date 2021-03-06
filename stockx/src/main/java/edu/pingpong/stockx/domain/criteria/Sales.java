@@ -1,6 +1,5 @@
 package edu.pingpong.stockx.domain.criteria;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -13,7 +12,6 @@ public class Sales implements Criteria{
     public List<Offer> checkCriteria(Item sneaker){
         return sneaker.offers().stream()
                                 .filter(s -> s instanceof Sale)
-                                .sorted(Comparator.reverseOrder())
                                 .collect(Collectors.toList());
     }
 }
