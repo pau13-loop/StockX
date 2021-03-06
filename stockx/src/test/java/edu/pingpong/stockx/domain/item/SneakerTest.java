@@ -1,7 +1,6 @@
 package edu.pingpong.stockx.domain.item;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Before;
@@ -11,18 +10,15 @@ import edu.pingpong.stockx.domain.offer.Bid;
 
 public class SneakerTest {
     
-
     private Sneaker sneaker = null;
 
     @Before
     public void setupSneaker() {
-
         sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");
     }
 
     @Test
     public void checkSneaker() {
-
         assertNotNull(sneaker);
     }
 

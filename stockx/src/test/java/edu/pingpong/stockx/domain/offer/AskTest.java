@@ -10,20 +10,17 @@ public class AskTest {
 
     @Before
     public void setupBid() {
-
         ask = new Ask("14", 400);
     }
 
     @Test
     public void sizaAndValueTest() {
-
         assertEquals("14", ask.size());
         assertEquals(400, ask.value());
     }
 
     @Test
     public void toStringTest() {
-
         assertEquals("\t\t14\t400\n", ask.toString());
     }
 }
