@@ -13,7 +13,7 @@ public class Bids implements Criteria{
     public List<Offer> checkCriteria(Item sneaker){
         return sneaker.offers().stream()
                         .filter(s -> s instanceof Bid)
-                        .sorted(Comparator.comparing(Offer::size))
+                        .sorted(Comparator.reverseOrder())
                         .collect(Collectors.toList());
     }
 }
