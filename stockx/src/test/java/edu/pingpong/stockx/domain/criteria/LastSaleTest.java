@@ -60,8 +60,8 @@ public class LastSaleTest {
     public void lastSaleNull() {
         sneaker = new Sneaker("Nike", "Performance");
         lastSale = new LastSale();
-        List<Offer> salesList = lastSale.checkCriteria(sneaker);
+        List<Offer> lastS = lastSale.checkCriteria(sneaker);
 
-        assertTrue(salesList.isEmpty());
+        assertTrue(lastS.isEmpty());
     }
 }
