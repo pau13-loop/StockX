@@ -49,7 +49,7 @@ public class AsksTest {
     }
 
     @Test
-    public void noAsksTest() {
+    public void nullAsksTest() {
         Item sneaker2 = new Sneaker("Nike", "Spider-Man");
         List<Offer> minimumAsk = asks.checkCriteria(sneaker2);
         sneaker2.setAsk(minimumAsk.isEmpty()? 0 : minimumAsk.get(0).value());
